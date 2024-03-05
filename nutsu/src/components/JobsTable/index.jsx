@@ -7,7 +7,7 @@ import JobsTable_edit from "./JobsTable_edit"
 import JobsTable_bill from "./JobsTable_bill"
 import JobsTable_car_receipt from "./JobsTable_car_receipt"
 import JobsTable_quotation from "./JobsTable_quotation"
-import JobPictures from "../JobPictures"
+import JobPictures from "../jobPictures.jsx"
 const VITE_API_URL = import.meta.env.VITE_API_URL; // Use a config file or similar for env variables
 
 
