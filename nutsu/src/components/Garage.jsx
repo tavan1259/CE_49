@@ -104,7 +104,7 @@ export default function Garage({garageName},) {
         <div className="navbar bg-base-100 rounded-box">
           <div className="flex-1 px-2 lg:flex-none">
             <a className="btn btn-ghost text-xl" onClick={scrollToTop}>
-            {/* <img src="src/assets/car-repair.png" alt="Car Repair Iconroyd"/> */}อู่นพดลการช่าง
+            {/* <img src="car/src/assets/car-repair.png" alt="Car Repair Iconroyd"/> */}อู่นพดลการช่าง
             </a>
           </div>
           <div className="flex justify-end flex-1 px-2">
@@ -137,20 +137,20 @@ export default function Garage({garageName},) {
       <div className="main-container">
       </div>
       <Routes>
-        <Route exact path="/" element={<Book />} />
-        <Route path="/JobTable" element={<JobTable />} />
-        <Route path="/CustomerManagement" element={<CustomerManagement />} />
-        <Route path="/CarManagement" element={<CarManagement />} />
-        <Route path="/Book2" element={<Book2 />} />
-        <Route path="/ServiceManagement" element={<ServiceManagement />} />
-        <Route path="/Workday" element={<Workday />} />
-        <Route path="/Employee" element={<Employee />} />
-        <Route path="/PartsManager" element={<PartsManager />} />
-        <Route path="/Holidays" element={<Holidays />} />
-        <Route path="/Create_garages" element={<Create_garages />} />
-        <Route path="/Reservation" element={<Reservation />} />
-        <Route path="/Create_Quotation" element={<Create_Quotation />} />
-        <Route path="/Create_car_receipt" element={<Create_car_receipt />} />
+        <Route exact path="/car/" element={<Book />} />
+        <Route path="/car/JobTable" element={<JobTable />} />
+        <Route path="/car/CustomerManagement" element={<CustomerManagement />} />
+        <Route path="/car/CarManagement" element={<CarManagement />} />
+        <Route path="/car/Book2" element={<Book2 />} />
+        <Route path="/car/ServiceManagement" element={<ServiceManagement />} />
+        <Route path="/car/Workday" element={<Workday />} />
+        <Route path="/car/Employee" element={<Employee />} />
+        <Route path="/car/PartsManager" element={<PartsManager />} />
+        <Route path="/car/Holidays" element={<Holidays />} />
+        <Route path="/car/Create_garages" element={<Create_garages />} />
+        <Route path="/car/Reservation" element={<Reservation />} />
+        <Route path="/car/Create_Quotation" element={<Create_Quotation />} />
+        <Route path="/car/Create_car_receipt" element={<Create_car_receipt />} />
       </Routes>
       </div>
     </>
