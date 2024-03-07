@@ -26,7 +26,7 @@ export default function ServiceManagement() {
                 }
             }
             if (!all_role.some(permission => permission["inventorystock"] === true)) {
-                navigate('/garage');
+                navigate('/car/garage');
             }
         } catch (error) {
             console.error("An error occurred while fetching data:", error);
@@ -131,9 +131,9 @@ export default function ServiceManagement() {
                                 <td>{service.description}</td>
                                 <td>{service.update_record}</td>
                                 <td>
-                                <div className="flex items-center justify-center space-x-2"> 
-                                    <button onClick={() => startEdit(service)} className="btn btn-sm  mr-2">แก้ไข</button>
-                                    <button onClick={() => deleteService(service.id)} className="btn btn-sm btn-error">ลบ</button>
+                                    <div className="flex items-center justify-center space-x-2">
+                                        <button onClick={() => startEdit(service)} className="btn btn-sm  mr-2">แก้ไข</button>
+                                        <button onClick={() => deleteService(service.id)} className="btn btn-sm btn-error">ลบ</button>
                                     </div>
                                 </td>
                             </tr>

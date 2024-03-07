@@ -31,7 +31,7 @@ export default function Create_car_receipt(props) {
                 }
             }
             if (!all_role.some(permission => permission["vehiclereceipts"] === true)) {
-                navigate('/garage');
+                navigate('/car/garage');
             }
         } catch (error) {
             console.error("An error occurred while fetching data:", error);

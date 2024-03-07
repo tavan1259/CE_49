@@ -61,7 +61,7 @@ function Login({ onLogin }) {
         const data_id = JSON.parse(localStorage.getItem('data_id'));
         // console.log('Pass', data_id.id);
         console.log(data_id.id);
-        navigate('/garage');
+        navigate('/car/garage');
 
         // onLogin(); // Ensure this function is defined elsewhere
       } catch (error) {

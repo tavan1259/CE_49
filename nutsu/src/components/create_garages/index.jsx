@@ -27,7 +27,7 @@ export default function Create_garages() {
         }
       }
       if (!all_role.some(permission => permission["garages"] === true)) {
-        navigate('/garage');
+        navigate('/car/garage');
       }
     } catch (error) {
       console.error("An error occurred while fetching data:", error);

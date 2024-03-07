@@ -25,7 +25,7 @@ const CarManagement = () => {
         }
       }
       if (!all_role.some(permission => permission["carandcustomer"] === true)) {
-        navigate('/garage');
+        navigate('/car/garage');
       }
     } catch (error) {
       console.error("An error occurred while fetching data:", error);
@@ -299,8 +299,8 @@ const CarManagement = () => {
                 /></div> */}
 
             </div>
-            <div className="flex items-center justify-center space-x-2"> 
-            <button type="submit" className="btn btn-primary mt-4">บันทึก</button>
+            <div className="flex items-center justify-center space-x-2">
+              <button type="submit" className="btn btn-primary mt-4">บันทึก</button>
             </div>
           </form>
         </div></div>

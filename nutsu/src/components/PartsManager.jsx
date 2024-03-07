@@ -28,7 +28,7 @@ const PartsManager = () => {
         }
       }
       if (!all_role.some(permission => permission["inventorystock"] === true)) {
-        navigate('/garage');
+        navigate('/car/garage');
       }
     } catch (error) {
       console.error("An error occurred while fetching data:", error);
@@ -140,30 +140,30 @@ const PartsManager = () => {
     <div className="container mx-auto mt-8">
       <h1 className="text-2xl font-bold mb-4 text-center ">คลังเก็บของ</h1>
       <div className="overflow-x-auto p-8">
-      <div className="flex flex-wrap justify-center p-6">
-  <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-    <div className="mb-4">
-      <input className="input input-bordered w-full" name="name" value={form.name} onChange={handleFormChange} placeholder="ชื่อ" />
-    </div>
-    <div className="mb-4">
-      <input className="input input-bordered w-full" name="price" value={form.price} onChange={handleFormChange} placeholder="ราคา" />
-    </div>
-    <div className="mb-4">
-      <input className="input input-bordered w-full" type="number" name="quantity" value={form.quantity} onChange={handleFormChange} placeholder="จำนวน" />
-    </div>
-    <div className="mb-4">
-      <input className="input input-bordered w-full" name="type" value={form.type} onChange={handleFormChange} placeholder="หมวดหมู่" />
-    </div>
-    <div className="mb-4">
-      <input className="input input-bordered w-full" name="description" value={form.description} onChange={handleFormChange} placeholder="รายละเอียด" />
-    </div>
-    <div className="text-center">
-      <button type="submit" className={`btn ${editingId ? 'btn-success' : 'btn-primary'}`}>
-        {editingId ? 'อัพเดท' : 'เพิ่ม'}
-      </button>
-    </div>
-  </form>
-</div>
+        <div className="flex flex-wrap justify-center p-6">
+          <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="mb-4">
+              <input className="input input-bordered w-full" name="name" value={form.name} onChange={handleFormChange} placeholder="ชื่อ" />
+            </div>
+            <div className="mb-4">
+              <input className="input input-bordered w-full" name="price" value={form.price} onChange={handleFormChange} placeholder="ราคา" />
+            </div>
+            <div className="mb-4">
+              <input className="input input-bordered w-full" type="number" name="quantity" value={form.quantity} onChange={handleFormChange} placeholder="จำนวน" />
+            </div>
+            <div className="mb-4">
+              <input className="input input-bordered w-full" name="type" value={form.type} onChange={handleFormChange} placeholder="หมวดหมู่" />
+            </div>
+            <div className="mb-4">
+              <input className="input input-bordered w-full" name="description" value={form.description} onChange={handleFormChange} placeholder="รายละเอียด" />
+            </div>
+            <div className="text-center">
+              <button type="submit" className={`btn ${editingId ? 'btn-success' : 'btn-primary'}`}>
+                {editingId ? 'อัพเดท' : 'เพิ่ม'}
+              </button>
+            </div>
+          </form>
+        </div>
 
         <div className=" flex-col items-center justify-center my-4">
           <input

@@ -70,7 +70,7 @@ const JobsTable = () => {
                 }
             }
             if (!all_role.some(permission => permission["job"] === true)) {
-                navigate('/garage');
+                navigate('/car/garage');
             }
         } catch (error) {
             console.error("An error occurred while fetching data:", error);
@@ -88,7 +88,7 @@ const JobsTable = () => {
 
             {displayComponent === "JobsTable_car_receipt" && <JobsTable_car_receipt fetchAPI={fetchAPI} setDisplayComponent={setDisplayComponent} currentJob={currentJob} setCurrentJob={setCurrentJob} />}
             {displayComponent === "JobsTable_quotation" && <JobsTable_quotation fetchAPI={fetchAPI} setDisplayComponent={setDisplayComponent} currentJob={currentJob} setCurrentJob={setCurrentJob} />}
-            <JobPictures/>
+            <JobPictures />
         </>
     );
 };
