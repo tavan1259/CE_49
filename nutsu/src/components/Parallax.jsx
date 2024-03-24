@@ -18,11 +18,11 @@ const Parallax = () => {
             <div className="hidden md:block">
                 <header>
                     <h1 className="big-title" style={{ transform: `translateY(${offset * 0.1}px)` }}>อู่นพดลการช่าง</h1>
-                    <img src="src/assets/person.png" className="person translate" style={{ transform: `translateY(${offset * -0.25}px)` }} alt="" />
-                    <img src="src/assets/mountain1.png" className="mountain1 translate" style={{ transform: `translateY(${offset * -0.2}px)` }} alt="" />
-                    <img src="src/assets/mountain2.png" className="mountain2 translate" style={{ transform: `translateY(${offset * 0.3}px)` }} alt="" />
+                    <img src="car/src/assets/person.png" className="person translate" style={{ transform: `translateY(${offset * -0.25}px)` }} alt="" />
+                    <img src="car/src/assets/mountain1.png" className="mountain1 translate" style={{ transform: `translateY(${offset * -0.2}px)` }} alt="" />
+                    <img src="car/src/assets/mountain2.png" className="mountain2 translate" style={{ transform: `translateY(${offset * 0.3}px)` }} alt="" />
                     {/* <img src="src/assets/mountain3.png" className="mountain3 translate" style={{ transform: `translateY(${offset * 0.3}px)` }} alt=""/> */}
-                    <img src="src/assets/sky.png" className="sky translate" style={{ transform: `translateY(${offset * 0.5}px)` }} alt="" />
+                    <img src="car/src/assets/sky.png" className="sky translate" style={{ transform: `translateY(${offset * 0.5}px)` }} alt="" />
                     <InfiniteScroll />
                 </header>
             </div>
