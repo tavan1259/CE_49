@@ -9,7 +9,7 @@ app.use(express.json());
 const pgp = require("pg-promise")();
 // const db = pgp('postgres://postgres:20250@localhost:5432/Automobile Garage');
 const db = pgp(
-  "postgres://management_user:hsVFexLZ7TqTqMBB@119.59.102.78:5432/autocar"
+  "postgres://user:pass@postgres/mydb"
 );
 
 const jobDataRouter = require("./jobdata.js")(db);
