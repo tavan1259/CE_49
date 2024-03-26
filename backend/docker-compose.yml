@@ -20,4 +20,4 @@ services:
     depends_on:
       - postgres
     ports:
-      - "3002:3001"
+      - "3000:3000"
