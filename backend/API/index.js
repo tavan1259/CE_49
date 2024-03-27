@@ -8,9 +8,13 @@ app.use(express.json());
 
 const pgp = require("pg-promise")();
 // const db = pgp('postgres://postgres:20250@localhost:5432/Automobile Garage');
-const db = pgp(
-  "postgres://user:pass@postgres/mydb"
-);
+const db = pgp({
+  host: "pg_container",
+  port: 5432,
+  database: "mydb",
+  user: "user",
+  password: "pass"
+});
 
 const jobDataRouter = require("./jobdata.js")(db);
 app.use(jobDataRouter);
