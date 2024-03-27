@@ -1,7 +1,9 @@
 version: '3.7'
 services:
-  postgres:
-    image: postgres:latest
+  db:
+    container_name: pg_container
+    image: postgres
+    restart: always
     environment:
       POSTGRES_DB: mydb
       POSTGRES_USER: user
