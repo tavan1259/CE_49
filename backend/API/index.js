@@ -11,7 +11,7 @@ const pgp = require("pg-promise")();
 const db = pgp({
     host: "db",
     port: 5432,
-    database: "car",
+    database: "test_db",
     user: "root",
     password: "root"
   });
